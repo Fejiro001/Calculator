@@ -12,6 +12,7 @@
 body {
   background-color: black;
 }
+
 /* CENTER THE CALCULATOR */
 #calculator_bg {
   display: flex;
@@ -23,6 +24,8 @@ body {
 
 #calculator {
   display: flex;
+  justify-content: center;
+  align-content: center;
   flex-direction: column;
   background-color: var(--base-color);
   padding: 1.5rem;
@@ -72,6 +75,7 @@ h1 {
   height: 4rem;
   width: 4rem;
   border: none;
+  text-align: center;
   box-shadow: 5px 2px 10px 1px black;
 }
 
@@ -98,4 +102,40 @@ h1 {
   cursor: pointer;
   color: white;
   background-color: var(--base-color);
+}
+
+@media screen and (max-width : 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #calculator {
+    width: 20rem;
+  }
+
+  #displaytext {
+    height: 2rem;
+  }
+
+  .calc_button {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width : 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #calculator {
+    width: 12rem;
+  }
+
+  .calc_button {
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+  }
 }
