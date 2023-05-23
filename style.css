@@ -30,6 +30,7 @@ body {
   background-color: var(--base-color);
   padding: 1.5rem;
   width: 24rem;
+  height: fit-content;
   border-radius: 1.5rem;
   box-shadow: 1px 6px 8px 8px black, 1px 6px 20px 6px var(--base-color);
   /* border: 2px solid red; */
@@ -51,7 +52,7 @@ h1 {
   box-sizing: border-box;
   width: inherit;
   height: 3rem;
-  padding: 1rem;
+  padding: .8rem 1rem 2.2rem;
   border-radius: 1.5rem;
   border: none;
   color: white;
@@ -59,6 +60,8 @@ h1 {
   box-shadow: 3px 3px 12px black;
   font-size: 1.5rem;
   font-weight: 600;
+  text-align: right;
+  overflow: hidden;
   /* border: 2px solid red; */
 }
 
@@ -66,8 +69,8 @@ h1 {
   margin: 2rem 0 1rem;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  gap: 1rem;
-  justify-content: space-between;
+  gap: .8rem;
+  justify-content: space-evenly;
   align-content: space-evenly;
   /* border: 2px solid red; */
 }
@@ -85,7 +88,7 @@ h1 {
   box-shadow: 5px 2px 10px 1px black;
 }
 
-.clear {
+.clear, .delete {
   color: red;
   background-color: white;
 }

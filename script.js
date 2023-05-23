@@ -1,10 +1,15 @@
-let displaytext = document.getElementById("displaytext");
+// display values
+let inputDisplay = document.getElementById("displaytext");
 // select all numbers
-let calc_button = document.querySelectorAll("#num");
-// console.log(calc_button[0].innerHTML)
+const numberButtons = document.querySelectorAll("#num");
+// select arithmetic operations
+const operateButtons = document.querySelectorAll("#operate");
+// equal button
+const equalButton = document.getElementById("equal");
+// clear display
+const clearDisplay = document.getElementById("clear");
 
 
-// on clicking any button (0 - 9)
-calc_button.forEach(btn => {
-  btn.addEventListener("click", pickANumber);
-});
+// convert nodelist to array
+const numberButtonsArray = Array.from(numberButtons);
+console.log(numberButtonsArray)
