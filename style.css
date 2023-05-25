@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(216, 215, 215);
 }
 
 /* CENTER THE CALCULATOR */
@@ -27,25 +27,22 @@ body {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  background-color: var(--base-color);
+  background-color: rgb(14, 14, 14);
   padding: 1.5rem;
   width: 24rem;
   height: fit-content;
   border-radius: 1.5rem;
-  box-shadow: 5px 6px 15px 5px black inset, 2px 2px 15px 4px var(--base-color);
-  border: 1px solid black;
 }
 
 h1 {
-  color: white;
+  color: #b14efd;
   margin: .5rem;
   font-size: 2.5rem;
-  text-shadow: 4px 4px 5px black;
+  text-shadow: 4px 4px 5px rgb(3, 3, 3);
 }
 
 #display {
   width: inherit;
-  /* border: 2px solid red; */
 }
 
 #displaytext {
@@ -56,13 +53,12 @@ h1 {
   border-radius: 1.5rem;
   border: none;
   color: white;
-  background-color: rgba(255, 255, 255, 0.493);
+  background-color: #b14efd9f;
   box-shadow: 3px 3px 12px black;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: right;
   overflow: hidden;
-  /* border: 2px solid red; */
 }
 
 #btn_display {
@@ -76,7 +72,7 @@ h1 {
 }
 
 .calc_button {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(14, 14, 14);
   color: white;
   font-size: 1.8rem;
   font-weight: 600;
@@ -85,11 +81,21 @@ h1 {
   width: 4rem;
   border: none;
   text-align: center;
-  box-shadow: 7px 5px 10px 1px black;
+  box-shadow: 0 0 12px 2px rgb(0, 0, 0);
 }
 
-#btn_display img {
+i {
   vertical-align: middle;
+}
+
+.calc_button.theme {
+  transition: all 0.4s ease;
+}
+
+.calc_button.change {
+  color: black;
+  background-color: white;
+  transition: all 0.4s ease;
 }
 
 .clear,
@@ -99,9 +105,9 @@ h1 {
   color: #b14efd;
 }
 
-.clear .delete .operation .decimal:hover {
+/* .clear .delete .operation .decimal:hover {
   color: white;
-}
+} */
 
 #btn_display .equal {
   grid-column: 3 / span 2;
@@ -110,8 +116,8 @@ h1 {
 
 .calc_button:hover {
   cursor: pointer;
-  color: white;
-  background-color: var(--base-color);
+  /* color: white;
+  background-color: var(--base-color); */
 }
 
 .clickedOn {
@@ -120,7 +126,10 @@ h1 {
   box-shadow: 10px 10px 12px 2px black inset;
 }
 
-
+.moon {
+  background-color: white;
+  src: "icons/moon.svg";
+}
 
 @media screen and (max-width : 700px) {
   h1 {
@@ -163,7 +172,7 @@ h1 {
     padding: .5rem 1rem 2rem;
   }
 
-  img {
+  i {
     width: 1rem;
   }
 }
